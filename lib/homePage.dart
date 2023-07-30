@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'mainNavBar.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key, required this.title});
-  final String title;
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -12,8 +11,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      bottomNavigationBar: MainNavBar(),
+    return Container(
+      child: Center(child: Icon(Icons.home)),
     );
   }
 }
